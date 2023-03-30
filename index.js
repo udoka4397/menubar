@@ -34,7 +34,7 @@ function AboveBP(){
 
 //1.when page is resized
 window.addEventListener('resize', function(){
-    if (this.window.innerWidth <= 768){
+    if (window.innerWidth <= 768){
         menuDisplay();
         openmnEl.addEventListener('click', function(){
             openmnElClick();
@@ -49,7 +49,7 @@ window.addEventListener('resize', function(){
 })
 // 2. when the pages loads
 window.addEventListener('load', function(){
-    if (this.window.innerWidth <= 768){
+    if (window.innerWidth <= 768){
         menuDisplay();
         
         openmnEl.addEventListener('click', function(){
